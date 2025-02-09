@@ -1,5 +1,6 @@
 export AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION>
 export AWS_ACCOUNT_ID=<AWS_ACCOUNT_ID>
+mkdir -p model_store
 torch-model-archiver -f --model-name bert_classifier \
     --version 1.0 \
     --serialized-file bert-base-uncased/pytorch_model.bin \

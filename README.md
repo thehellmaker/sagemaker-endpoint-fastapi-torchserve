@@ -39,6 +39,7 @@ curl -L https://huggingface.co/bert-base-uncased/resolve/main/pytorch_model.bin 
 curl -L https://huggingface.co/bert-base-uncased/resolve/main/config.json -o ./bert-base-uncased/config.json
 curl -L https://huggingface.co/bert-base-uncased/resolve/main/tokenizer.json -o ./bert-base-uncased/tokenizer.json
 curl -L https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json -o ./bert-base-uncased/tokenizer_config.json
+curl -L https://huggingface.co/bert-base-uncased/resolve/main/vocab.txt -o ./bert-base-uncased/vocab.txt
 ```
 
 ### 3. Create Model Archive
