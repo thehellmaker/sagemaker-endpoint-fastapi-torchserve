@@ -17,9 +17,9 @@ COPY requirements.txt /opt/ml/code/
 RUN pip install --no-cache-dir -r /opt/ml/code/requirements.txt
 
 # Copy application code and required files
-COPY app.py /opt/ml/code/
+COPY src/fastapi/app.py /opt/ml/code/
 COPY serve /opt/ml/code
-COPY config.properties /opt/ml/code
+COPY src/torchserve/config.properties /opt/ml/code
 COPY model_store/ /opt/ml/model
 
 # Ensure proper permissions for scripts

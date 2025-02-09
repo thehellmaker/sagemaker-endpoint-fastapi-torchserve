@@ -3,7 +3,7 @@ export AWS_ACCOUNT_ID=<AWS_ACCOUNT_ID>
 torch-model-archiver -f --model-name bert_classifier \
     --version 1.0 \
     --serialized-file bert-base-uncased/pytorch_model.bin \
-    --handler text_classifier.py \
+    --handler src/torchserve/text_classifier.py \
     --extra-files "bert-base-uncased/config.json,bert-base-uncased/tokenizer.json,bert-base-uncased/tokenizer_config.json,bert-base-uncased/vocab.txt" \
     --export-path model_store
 tar -czvf model.tar.gz model_store
